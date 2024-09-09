@@ -12,13 +12,13 @@ template<typename T>
 class Deck : public std::vector<T>
 {
 public:
-    T top()
+    T top() const
     {
         assert(!this->empty());
         return this->back();
     }
 
-    T bottom()
+    T bottom() const
     {
         assert(!this->empty());
         return this->front();
